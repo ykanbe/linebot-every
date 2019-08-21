@@ -145,9 +145,9 @@ if($type == "image"){
 		->setHtml('tags: '.$userId.'<br>'.$massage2.$massage0.$massageend);
   $sendgrid->send($email);
 } else if ((strpos($text,'の返品・交換・キャンセルをしたい') !== false)||(strpos($text,'のお支払いについて') !== false)||(strpos($text,'のお届け先変更方法が知りたい') !== false)||(strpos($text,'の領収書が欲しい') !== false)||(strpos($text,'の納期・配送状況についておしえて') !== false)) {
-  $massageurl = 'sunnyprize';
+  $massageurl = 'everysp';
   if($massagecat == '320189'){
-	  $massageurl = 'happysunny';
+	  $massageurl = 'itsumostore';
   }
   $response_format_text = [
     "type" => "template",
